@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "discord.js-selfbot-v13": "^2.14.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "custom-activity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Allows you to keep your account status as customizable. It also allows you to set a gif link as your image in your rpc and have 2 buttons. It is fully customizable!"
+}
