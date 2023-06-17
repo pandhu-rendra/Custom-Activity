@@ -1,4 +1,4 @@
-# Link for Replt : https://replit.com/@oBloody/Custom-Activity?v=1
+# Link for Replit : https://replit.com/@oBloody/Custom-Activity?v=1
 
 # Custom Activity Online 24/7.
 **Allows you to keep your account status as customizable. It also allows you to set a gif link as your image in your rpc and have 2 buttons. It is fully customizable!**
@@ -11,4 +11,4 @@
 
 > ⭐ Feel free to Star the Repository if this helped you! ;)
 >
-> Custom Activity by oBloody (ItsFexnes) is licensed under Attribution 4.0 International.
+> Custom Activity by @oBloody (ItsFexnes) is licensed under Attribution 4.0 International.
