@@ -24,12 +24,18 @@ function formatTime() {
   
     const r = new Discord.RichPresence()
       .setApplicationId('1021634450020376626')
-      .setType('STREAMING') //COMPETING, CUSTOM, LISTENING, PLAYING, STREAMING, WATCHING.
+      .setType('STREAMING') //COMPETING, LISTENING, PLAYING, STREAMING, WATCHING.
       .setURL('Your Twitch URL') //Must be a youtube video link 
       .setState('Your State')
       .setName('ItsFexnes')
       .setDetails(`THE NAME IT SHOWS YOUR STREAMING [${formatTime()}]`)
       .setStartTimestamp(Date.now())
+      /*.setParty({
+        max: 9999,
+        current: 6789,
+        id: Discord.getUUID(),
+      })*/
+      
    .setAssetsLargeImage('Large Image URL') //You can put links in tenor or discord and etc.
       .setAssetsLargeText('Large Text') //Text when you hover the Large image
       .setAssetsSmallImage('Small Image URL') //You can put links in tenor or discord and etc.
