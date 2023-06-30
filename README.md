@@ -25,3 +25,5 @@
 ## 📝 Support server
 
 - [Myuko Store X Coding](https://discord.gg/e4Mwab6ncy)
+
+Made with :heart: and Javascript!
