@@ -20,7 +20,7 @@
 - [fexnes.dev](https://discord.com/users/941844949824069692)
 ## 🎩 Replit code link
 
-- [repl.it]()
+- [repl.it](https://replit.com/@oBloody/Custom-Activity?v=1)
 
 ## 📝 Support server
 
