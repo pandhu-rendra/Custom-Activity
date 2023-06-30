@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() {
   const date = new Date();
   const options = {
-    timeZone: 'Asia/Jakarta',
+    timeZone: 'Asia/Jakarta', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric',
@@ -21,7 +21,7 @@ function formatTime() {
 function formatDay() {
   const date = new Date();
   const options = {
-    timeZone: 'Asia/Jakarta',
+    timeZone: 'Asia/Jakarta', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     weekday: 'long'
   };
   return new Intl.DateTimeFormat('id-ID', options).format(date);
@@ -30,7 +30,7 @@ function formatDay() {
 function formatMonth() {
   const date = new Date();
   const options = {
-    timeZone: 'Asia/Jakarta',
+    timeZone: 'Asia/Jakarta', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     month: 'long'
   };
   return new Intl.DateTimeFormat('id-ID', options).format(date);
