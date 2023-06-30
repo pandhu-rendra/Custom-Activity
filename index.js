@@ -71,7 +71,7 @@ client.on('ready', async () => {
     .addButton('Button 2', 'Button URL');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, idle, offline. online
+  client.user.setPresence({ status: "dnd" }); //dnd, idle, offline, online
 
   let prevTime = null;
   setInterval(() => {
