@@ -24,7 +24,7 @@ function formatDay() {
     timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     weekday: 'long'
   };
-  return new Intl.DateTimeFormat('id-ID', options).format(date);
+  return new Intl.DateTimeFormat('en-US', options).format(date);
 }
 
 function formatMonth() {
@@ -33,7 +33,7 @@ function formatMonth() {
     timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     month: 'long'
   };
-  return new Intl.DateTimeFormat('id-ID', options).format(date);
+  return new Intl.DateTimeFormat('en-US', options).format(date);
 }
 
 function formatYears() {
