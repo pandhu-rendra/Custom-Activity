@@ -7,56 +7,96 @@ const client = new Discord.Client({
 const keepAlive = require('./server.js');
 keepAlive();
 
-function formatTime() { 
-    const date = new Date();
-    const options = {
-      timeZone: 'Asia/Jakarta', //https://www.zeitverschiebung.net/en/ and find your city and enter here
-      hour12: true,
-      hour: 'numeric',
-      minute: 'numeric'
-    };
-    return new Intl.DateTimeFormat('en-US', options).format(date);
-  }
+function formatTime() {
+  const date = new Date();
+  const options = {
+    timeZone: 'Asia/Jakarta',
+    hour12: true,
+    hour: 'numeric',
+    minute: 'numeric',
+  };
+  return new Intl.DateTimeFormat('en-US', options).format(date);
+}
 
-  client.on('ready', async () => {
-    console.clear();
-    console.log(`${client.user.tag} - rich presence started!`);
-  
-    const r = new Discord.RichPresence()
-      .setApplicationId('1021634450020376626')
-      .setType('STREAMING') //COMPETING, LISTENING, PLAYING, STREAMING, WATCHING.
-      .setURL('Your Twitch URL') //Must be a youtube video link 
-      .setState('Your State')
-      .setName('ItsFexnes')
-      .setDetails(`THE NAME IT SHOWS YOUR STREAMING [${formatTime()}]`)
-      .setStartTimestamp(Date.now())
-      /*.setParty({
+function formatDay() {
+  const date = new Date();
+  const options = {
+    timeZone: 'Asia/Jakarta',
+    weekday: 'long'
+  };
+  return new Intl.DateTimeFormat('id-ID', options).format(date);
+}
+
+function formatMonth() {
+  const date = new Date();
+  const options = {
+    timeZone: 'Asia/Jakarta',
+    month: 'long'
+  };
+  return new Intl.DateTimeFormat('id-ID', options).format(date);
+}
+
+function formatYears() {
+  const date = new Date();
+  const options = {
+    year: 'numeric',
+  };
+  return new Intl.DateTimeFormat('en-US', options).format(date);
+}
+
+client.on('ready', async () => {
+  console.clear();
+  console.log(`${client.user.username} - rich presence started!`);
+
+  const r = new Discord.RichPresence()
+    .setApplicationId('1021634450020376626')
+    .setType('PLAYING') //PLAYING COMPETING LISTENING WATCHING STREAMING
+    .setURL('Your Twitch URL') //must be a youtube video link
+    .setState(`Your State`)
+    .setName('ItsFexnes')
+    .setDetails(`THE NAME IT SHOWS YOUR STREAMING [${formatTime()}] - [${formatDay()}] - [${formatMonth()}] - [${formatYears()}]`)
+    .setStartTimestamp(Date.now())
+      /*.setParty({ // remove /* if you want to use the party features
         max: 9999,
         current: 6789,
-        id: Discord.getUUID(),
+        id: Discord.getUUID,
       })*/
-      
-   .setAssetsLargeImage('Large Image URL') //You can put links in tenor or discord and etc.
-      .setAssetsLargeText('Large Text') //Text when you hover the Large image
-      .setAssetsSmallImage('Small Image URL') //You can put links in tenor or discord and etc.
-      .setAssetsSmallText('Small Text') //Text when you hover the Small image
-      .addButton('Button 1', 'Button URL')
-      .addButton('Button 2', 'Button URL');
-  
-    client.user.setActivity(r);
-    client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
-  
-    let prevTime = null;
-    setInterval(() => {
-      const newTime = formatTime();
-      if (newTime !== prevTime) {
-        const newDetails = `PUT WHAT IT SAYS YOUR STREAMING HERE [${newTime}]`;
-        r.setDetails(newDetails);
-        client.user.setActivity(r);
-        prevTime = newTime;
-      }
-    }, 1000); // Update every second
-  });
-  
-  const mySecret = process.env['TOKEN'];
-  client.login(mySecret);
+
+    
+    .setAssetsLargeImage('Large Image URL') //You can put links in tenor or discord and etc (recomended discord image url).
+    .setAssetsLargeText('Large Text') //Text when you hover the Large image
+    .setAssetsSmallImage('Small Image URL') //You can put links in tenor or discord and etc (recomended discord image url).
+    .setAssetsSmallText('Small Text') //Text when you hover the Small image
+    .addButton('Button 1', 'Button URL')
+    .addButton('Button 2', 'Button URL');
+
+  client.user.setActivity(r);
+  client.user.setPresence({ status: "dnd" });
+
+  let prevTime = null;
+  setInterval(() => {
+    const newTime = formatTime();
+    if (newTime !== prevTime) {
+      const newDetails = `THE NAME IT SHOWS YOUR STREAMING [${newTime}] - [${formatDay()}] - [${formatMonth()}] - [${formatYears()}]`;
+      r.setDetails(newDetails);
+      client.user.setActivity(r);
+      prevTime = newTime;
+    }
+  }, 1000);
+});
+
+const mySecret = process.env['TOKEN'];
+client.login(mySecret);
+
+
+
+
+
+
+
+
+
+
+// ©️ Copyright by ItsFexnes - 2023 - All rights reserved
+// DM me on discord if there is an error code - fexnes.dev#0
+// 
