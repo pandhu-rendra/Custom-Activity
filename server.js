@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 
 server.all('/', (req, res,) => {
-    res.send('Copy the url or link from webview and open https://uptimerobot.com/ create a new website there and paste the link from webview')
+    res.send('Custom Activity made with ❤️ from fexnes.dev#0')
 })
 
 function keepAlive() {
