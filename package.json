@@ -10,7 +10,7 @@
   "main": "index.js",
   "devDependencies": {},
   "keywords": [],
-  "author": "",
+  "author": "ItsFexnes, oBloody (ItsFexnes), fexnes.dev#0",
   "license": "ISC",
   "description": "Allows you to keep your account status as customizable. It also allows you to set a gif link as your image in your rpc and have 2 buttons. It is fully customizable!"
 }
