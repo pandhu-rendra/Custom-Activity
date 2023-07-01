@@ -15,6 +15,7 @@
 - [node.js 14+](https://nodejs.org/en/download/)
 - [discord.js-selfbot-v13](https://www.npmjs.com/package/discord.js-selfbot-v13)
 - [express](https://www.npmjs.com/package/express)
+- [.env](https://www.npmjs.com/package/dotenv)
 
 ## 💸 Support me
 - [Saweria.co](https://saweria.co/ItsFexnes)
