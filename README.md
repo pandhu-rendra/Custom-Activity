@@ -16,6 +16,9 @@
 - [discord.js-selfbot-v13](https://www.npmjs.com/package/discord.js-selfbot-v13)
 - [express](https://www.npmjs.com/package/express)
 
+## 💸 Support me
+- [Saweria.co](https://saweria.co/ItsFexnes)
+  
 ## 📞 Contact me on discord
 - [fexnes.dev](https://discord.com/users/941844949824069692)
 ## 🎩 Replit code link
