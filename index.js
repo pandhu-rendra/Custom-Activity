@@ -48,12 +48,6 @@ client.on('ready', async () => {
   console.clear();
   console.log(`${client.user.username} - rich presence started!`);
 
-client.on('messageCreate', (message) => {
-  if (message.content.startsWith('<@ID>')) { // Replace <@ID> with the command tag you want.
-    message.channel.send('Hi, what(s) up? \:\) \n- Auto Respond'); // Change the response message as you wish.
-  }
-});
-
   const r = new Discord.RichPresence()
     .setApplicationId('1021634450020376626')
     .setType('PLAYING') //PLAYING COMPETING LISTENING WATCHING STREAMING
