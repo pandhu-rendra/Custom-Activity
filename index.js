@@ -98,6 +98,6 @@ client.login(mySecret);
 
 
 // ©️ Copyright by ItsFexnes - 2023 - All rights reserved
-// DM me on discord if there is an error code - fexnes.dev#0
+// DM me on discord if there is an error code - rendra.aja#0
 // Support me in https://saweria.co/ItsFexnes
 // Join my friends store if you want to help my friends and me
