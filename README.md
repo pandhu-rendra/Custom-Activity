@@ -33,7 +33,7 @@ If you find this project helpful, consider supporting me on Saweria:
 
 Feel free to reach out to me on Discord:
 
-- [fexnes.dev](https://discord.com/users/941844949824069692)
+- [rendra.aja](https://discord.com/users/941844949824069692)
 
 ## 🎩 Replit code link
 
