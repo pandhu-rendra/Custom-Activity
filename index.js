@@ -50,7 +50,7 @@ client.on('ready', async () => {
 
   const r = new Discord.RichPresence()
     .setApplicationId('1021634450020376626')
-    .setType('PLAYING') //PLAYING COMPETING LISTENING WATCHING STREAMING
+    .setType('PLAYING') //PLAYING, COMPETING, LISTENING, WATCHING, AND STREAMING
     .setURL('Your Twitch URL') //must be a youtube video link
     .setState(`Your State`)
     .setName('ItsFexnes')
